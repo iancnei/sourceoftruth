@@ -6,8 +6,8 @@
   * [Prototyping](#prototyping)
   	* [Wireframes](#wireframes)
   		* [Minimum Viable Product](#minimum-viable-product)
-  		* [Stretch: Single Page](#stretch:-single-page)
-  		* [Stretch: User](#stretch:-user)
+  		* [Stretch: Single Page](#stretch-single-page)
+  		* [Stretch: User](#stretch-user)
   	* [Entity Relationship Diagram](#entity-relationship-diagram)
   	* [User Stories](#user-stories)
 
