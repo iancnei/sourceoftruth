@@ -1,8 +1,9 @@
-# Source of Truth
+# Source of Truth (working title)
 
 ## Table of contents
 
   * [What is Source of Truth (working title)?](#what-is-source-of-truth-(working-title)?)
+  * [What technologies will be used?](#what-technologies-will-be-used?)
   * [Prototyping](#prototyping)
   	* [Wireframes](#wireframes)
   		* [Minimum Viable Product](#minimum-viable-product)
@@ -15,6 +16,10 @@
 
 A website that will serve as a Rosetta Stone for programmers.  Its aim is to show how to write basic programming statements in different languages so that programmers can avoid simple syntax errors.
 
+## What technologies will be used?
+
+Source of Truth (working title) will be made with Ruby on Rails and AngularJS. It will use a PostgreSQL database.
+
 ## Prototyping
 
 ### Wireframes
@@ -23,13 +28,13 @@ A website that will serve as a Rosetta Stone for programmers.  Its aim is to sho
 
 ![MVP](https://raw.githubusercontent.com/inei/sourceoftruth/master/prototyping/wireframes/mvp.png)
 
-#### Stretch: Single Page
+#### Stretch: Single Page Search and Results
 
 ![Single Page Search](https://raw.githubusercontent.com/inei/sourceoftruth/master/prototyping/wireframes/1%20page%20search.png)
 
 ![Single Page Results](https://raw.githubusercontent.com/inei/sourceoftruth/master/prototyping/wireframes/1%20page%20results.png)
 
-#### Stretch: User
+#### Stretch: Multiple Page User
 
 ![Login and Signup](https://raw.githubusercontent.com/inei/sourceoftruth/master/prototyping/wireframes/login%20and%20signup%20sidebar.png)
 
