@@ -1,6 +1,6 @@
 # Source of Truth (working title)
 
-## Table of contents
+## Table of Contents
 
   * [What is Source of Truth (working title)?](#what-is-source-of-truth-(working-title)?)
   * [What technologies will be used?](#what-technologies-will-be-used?)
