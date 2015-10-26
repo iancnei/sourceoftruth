@@ -46,7 +46,7 @@ Source of Truth (working title) will be made with Ruby on Rails and AngularJS. I
 
 ### Entity Relationship Diagram
 
-![ERD](https://raw.githubusercontent.com/inei/sourceoftruth/master/prototyping/erd/ERD.png)
+![ERD](https://raw.githubusercontent.com/inei/sourceoftruth/master/prototyping/erd/erd.png)
 
 ### User Stories
 https://trello.com/b/ddBCrGYt/source-of-truth
