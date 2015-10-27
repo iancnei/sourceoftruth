@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
   root to: 'application#angular'
 
-  resources :statements, only: [:index, :show]
+  # resources :statements, only: [:show]
+
+  # scope :api do
+  #   resources :statements, defaults: {format: 'json'}
+  # end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

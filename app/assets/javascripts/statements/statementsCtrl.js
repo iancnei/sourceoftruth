@@ -1,10 +1,17 @@
-angular.module('sourceOfTruth')
-	.controller('StatementsCtrl', [
+angular.module('sourceOfTruth', ['ngResource'])
+.controller('StatementsCtrl', [
 		'$scope',
 		'$stateParams',
-		'statements',
-		function ($scope, $stateParams, statements)
+		'$resource',
+		'StatementsFactory',
+		function ($scope, $stateParams, $resource, StatementsFactory)
 		{
-			$scope.statement = statements.allStatements[$stateParams.id];
+			// $scope.statement = Statements.get({id: $routeParams.id}, function (data)
+			// {
+			// 	console.log(data);
+			// });
+
+			// $scope.statement = StatementsFactory.specificStatement($routeParams.id);
+
 		}
 	]);

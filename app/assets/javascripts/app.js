@@ -1,5 +1,5 @@
-angular.module('sourceOfTruth', ['ui.router', 'templates'])
-  .config([
+angular.module('sourceOfTruth', ['ui.router', 'templates', 'ngResource'])
+.config([
     '$stateProvider',
     '$urlRouterProvider',
     '$locationProvider',

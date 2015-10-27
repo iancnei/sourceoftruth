@@ -1,10 +1,10 @@
-angular.module('sourceOfTruth')
-	.controller('MainCtrl', [
+angular.module('sourceOfTruth', ['ui.router', 'templates', 'ngResource'])
+.controller('MainCtrl', [
 		'$scope',
-    	'statements',
-		function ($scope, statements){
+    	'StatementsFactory',
+		function ($scope, StatementsFactory){
   		
-      		$scope.statements = statements.allStatements;
+      		// $scope.statements = statements.allStatements;
 
 		}
 	]);
