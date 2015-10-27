@@ -1,13 +1,12 @@
 angular.module('sourceOfTruth')
-	.factory('statements', [function(){
+	.factory('statements', ['$http', function ($http){
 	  
-		// var o = {
-		// allStatements: [
-		// 	{name: 'if', text: "if(a > b)\n{\n  //do something\n}", id: 0},
-		// 	{name: 'for', text: "for(var i; i < limit; i++)\n{\n  //do something\n}", id: 1},
-		// 	{name: 'while', text: "while(a > b)\n{\n  //do something\n}", id: 2},
-  		//]
-		// };
-		// return o;
+		// var o;
+		// o.specificStatement = function(id)
+		// {
+		// 	return $http.get('/statements/{id}.json').success(function(data){
+		// 	     angular.copy(data, o.statement);
+		// 	});
+		// }
 
 	}]);
