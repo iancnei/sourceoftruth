@@ -28,7 +28,7 @@ end
 
 # create all the text
 allText = []
-allText.push({statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Javascript').id, text: "if(a > b)\n{\n  //do something\n}"}, {statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Ruby').id, text: "if a > b\n  #do something\nend"}, {statement_id: Statement.find_by_name('for'), language_id: Language.find_by_name('Javascript').id, text: ""}, {statement_id: Statement.find_by_name('for'), language_id: Language.find_by_name('Ruby').id, text: ""}, {statement_id: Statement.find_by_name('while'), language_id: Language.find_by_name('Javascript').id, text: ""}, {statement_id: Statement.find_by_name('while'), language_id: Language.find_by_name('Ruby').id, text: ""})
+allText.push({statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Javascript').id, text: "if(a > b)\n{\n  //do something\n}"}, {statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Ruby').id, text: "if a > b\n  #do something\nend"}, {statement_id: Statement.find_by_name('for'), language_id: Language.find_by_name('Javascript').id, text: "for(var i = 0; i < limit; i++)\n{\n  //do something\n}"}, {statement_id: Statement.find_by_name('for'), language_id: Language.find_by_name('Ruby').id, text: "for i in limit\n  # do something\nend"}, {statement_id: Statement.find_by_name('while'), language_id: Language.find_by_name('Javascript').id, text: "while(a > b)\n{\n  //do something\n}"}, {statement_id: Statement.find_by_name('while'), language_id: Language.find_by_name('Ruby').id, text: "while a > b do\n	# do something\nend"})
 
 StatementLanguage.destroy_all
 

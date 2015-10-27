@@ -1,6 +1,8 @@
 <div class="page-header">
-  <h3>{{ statement.name }} Statements</h3>
+	<h3>{{ statement.name }} Statements</h3>
 </div>
-<pre>
-{{ statement.text }}
-</pre>
+<div ng-repeat='example in allExamples'>
+	<pre>
+		{{ example.text }}
+	</pre>
+</div>
