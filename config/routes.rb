@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'application#angular'
 
-  # resources :statements, only: [:show]
+  resources :statements, only: [:show]
 
   # scope :api do
   #   resources :statements, defaults: {format: 'json'}

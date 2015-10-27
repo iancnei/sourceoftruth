@@ -16,7 +16,7 @@ angular.module('sourceOfTruth', ['ui.router', 'templates', 'ngResource'])
 		var o;
 		o.specificStatement = function(id)
 		{
-			return $http.get('/statements/' + id + '.json').success(function(data){
+			return $http.get('/statements/{id}.json').success(function(data){
 			     angular.copy(data, o.statement);
 			});
 		}
