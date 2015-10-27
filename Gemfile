@@ -23,6 +23,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use 'angular-rails-templates' for compiling html templates into JS files
+gem 'angular-rails-templates'
+
 group :development, :test do
   # Call 'pry-byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug'
