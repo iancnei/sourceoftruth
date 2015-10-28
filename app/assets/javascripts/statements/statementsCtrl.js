@@ -16,7 +16,7 @@ angular.module('sourceOfTruth')
 
 			$scope.LinkToStatement = function()
 			{
-				$location.path('/statements/' + $scope.searchStatement.name);
+				$location.path('/statements/' + $scope.searchStatement.name.toLowerCase());
 			}
 		}
 	]);

@@ -17,8 +17,8 @@ class StatementsController < ApplicationController
 			if specificStatement[:example] == nil
 				specificStatement[:example] = [];
 			end
-			specificStatement[:example].push(StatementLanguage.find_by_statement_id_and_language_id(specificStatement[:statement].id, lang.id))
-			# specificStatement[:example].push(StatementLanguage.where({statement_id: specificStatement[:statement].id, language_id: lang.id}))
+			specificStatement[:example].push(Example.find_by_statement_id_and_language_id(specificStatement[:statement].id, lang.id))
+			# specificStatement[:example].push(Example.where({statement_id: specificStatement[:statement].id, language_id: lang.id}))
 		end
 		respond_with specificStatement
 	end

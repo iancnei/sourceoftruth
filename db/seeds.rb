@@ -36,10 +36,10 @@ allText.push(
 	{statement_id: Statement.find_by_name('while').id, language_id: Language.find_by_name('Javascript').id, text: "while(a > b)\n{\n  //do something\n}"},
 	{statement_id: Statement.find_by_name('while').id, language_id: Language.find_by_name('Ruby').id, text: "while a > b do\n	# do something\nend"})
 
-StatementLanguage.destroy_all
+Example.destroy_all
 
 allText.each do |x|
-	StatementLanguage.create(x)
+	Example.create(x)
 end
 
 # Statement.first.statement_languages.map(&:text) # will return the text in an array

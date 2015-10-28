@@ -1,6 +1,6 @@
-class CreateStatementLanguages < ActiveRecord::Migration
+class CreateExamples < ActiveRecord::Migration
   def change
-    create_table :statement_languages do |t|
+    create_table :examples do |t|
       t.string :text
       t.references :statement
       t.references :language
