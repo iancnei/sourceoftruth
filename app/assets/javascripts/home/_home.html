@@ -3,11 +3,11 @@
 </div>
 
 <h2 class='text-center'>Search for a Basic Programming Statement</h2><br>
-<form >
-	<input type="text" class='form-control' ng-model="search.name" placeholder="Search" autofocus/>
+<form ng-submit="LinkToStatement()">
+	<input type="text" class='form-control' ng-model="searchStatement.name" placeholder="Search" autofocus/>
 </form>
-<table class="table">
+<!-- <table class="table">
 	<tr ng-repeat="statement in allStatements.$$state.value.data | filter:search:strict">
 		<td><a href="/statements/{{ statement.name }}">{{ statement.name }}</a></td>
 	</tr>
-</table>
+</table> -->

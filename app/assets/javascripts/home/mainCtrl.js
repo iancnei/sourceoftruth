@@ -3,17 +3,16 @@ angular.module('sourceOfTruth')
 		'$scope',
 		'statementsFactory',
 		'$http',
-		function ($scope, statementsFactory, $http)
+		'$location',
+		function ($scope, statementsFactory, $http, $location)
 		{
 			$scope.allStatements = statementsFactory.query();
 
-			$scope.statement = {};
+			$scope.searchStatement = {};
 
 			$scope.LinkToStatement = function()
 			{
-				$http.get('/statements/' + $scope.statement.name).success(function(status){
-					console.log(status)
-				});
+				$location.path('/statements/' + $scope.searchStatement.name);
 			}
 		}
 	]);
