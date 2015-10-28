@@ -1,5 +1,13 @@
 <div class='page-header'>
-	<h1>Source of Truth</h1>
+	<h1 class='text-center'>Source of Truth</h1>
 </div>
 
-<h2>Choose a Programming Statement from the Side</h2>
+<h2 class='text-center'>Search for a Basic Programming Statement</h2><br>
+<form >
+	<input type="text" class='form-control' ng-model="search.name" placeholder="Search" autofocus/>
+</form>
+<table class="table">
+	<tr ng-repeat="statement in allStatements.$$state.value.data | filter:search:strict">
+		<td><a href="/statements/{{ statement.name }}">{{ statement.name }}</a></td>
+	</tr>
+</table>

@@ -3,8 +3,16 @@ angular.module('sourceOfTruth')
 	  
 		var o = {};
 		o.statement = [];
+		o.allStatements = [];
+
+		o.query = function()
+		{
+			return $http.get('/statements.json').success(function(data){
+				angular.copy(data, o.allStatements);
+			});
+		}
 		
-		o.specificStatement = function(id)
+		o.get = function(id)
 		{
 			return $http.get('/statements/' + id + '.json').success(function(data){
 			     angular.copy(data, o.statement);

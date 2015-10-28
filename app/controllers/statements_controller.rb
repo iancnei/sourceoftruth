@@ -2,6 +2,10 @@ class StatementsController < ApplicationController
 
 	respond_to :json, :html
 
+	def index
+		respond_with Statement.all
+	end
+
 	def show
 		specificStatement = {};
 		specificStatement[:statement] = Statement.find_by_name(params[:id]);
