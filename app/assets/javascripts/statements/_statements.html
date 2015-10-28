@@ -1,6 +1,12 @@
 <div class="page-header">
-	<h3>{{ statement[0].name }} Statements</h3>
+	<h3>{{ statement.$$state.value.data.statement.name }} Statements</h3>
 </div>
 <div>
-	{{  }}
+	<ul class="list-unstyled">
+		<li ng-repeat="language in statement.$$state.value.data.language track by $index">
+			<h4>{{ language.name }}</h4>
+			<pre>{{ statement.$$state.value.data.example[$index].text }}</pre>
+			<br>
+		</li>
+	</ul>
 </div>

@@ -6,6 +6,9 @@ angular.module('sourceOfTruth')
 		function ($scope, $stateParams, statementsFactory)
 		{
 			$scope.statement = statementsFactory.specificStatement($stateParams.id);
-			debugger
+			// $scope.statement = statementsFactory.get({id: $stateParams.id}, function (data)
+			// {
+			// 	console.log(data);
+			// });
 		}
 	]);
