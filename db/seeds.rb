@@ -31,12 +31,12 @@ end
 # create all the text
 allText = []
 allText.push(
-	{statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Javascript').id, text: "if(a > b)\n{\n  //do something\n}"},
-	{statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Ruby').id, text: "if a > b\n  #do something\nend"},
-	{statement_id: Statement.find_by_name('for').id, language_id: Language.find_by_name('Javascript').id, text: "for(var i = 0; i < limit; i++)\n{\n  //do something\n}"},
-	{statement_id: Statement.find_by_name('for').id, language_id: Language.find_by_name('Ruby').id, text: "for i in limit\n  # do something\nend"},
-	{statement_id: Statement.find_by_name('while').id, language_id: Language.find_by_name('Javascript').id, text: "while(a > b)\n{\n  //do something\n}"},
-	{statement_id: Statement.find_by_name('while').id, language_id: Language.find_by_name('Ruby').id, text: "while a > b do\n	# do something\nend"})
+	{statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Javascript').id, text: "const a = 1;\nconst b= 2;\nif (a < b) {\n  // do something\n}"},
+	{statement_id: Statement.find_by_name('if').id, language_id: Language.find_by_name('Ruby').id, text: "a, b = 1, 2\nif a > b\n  # do something\nend"},
+	{statement_id: Statement.find_by_name('for').id, language_id: Language.find_by_name('Javascript').id, text: "const limit = 3;\nfor (i = 0; i < limit; i++) {\n  // do something\n}"},
+	{statement_id: Statement.find_by_name('for').id, language_id: Language.find_by_name('Ruby').id, text: "arr = [1, 2, 3]\narr.each do |arrayItem|\n  # do something\nend "},
+	{statement_id: Statement.find_by_name('while').id, language_id: Language.find_by_name('Javascript').id, text: "const a = 1;\nconst b = 2;\nwhile (a > b) {\n  // do something\n}"},
+	{statement_id: Statement.find_by_name('while').id, language_id: Language.find_by_name('Ruby').id, text: "a, b = 1, 2\nwhile a > b\n  # do something\nend"})
 
 Example.destroy_all
 

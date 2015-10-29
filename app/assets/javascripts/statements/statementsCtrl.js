@@ -6,6 +6,8 @@ angular.module('sourceOfTruth')
 		'$location',
 		function ($scope, $stateParams, statementsFactory, $location)
 		{
+			$scope.allStatements = statementsFactory.query();
+
 			$scope.statement = statementsFactory.get($stateParams.id);
 			// $scope.statement = statementsFactory.get({id: $stateParams.id}, function (data)
 			// {
@@ -16,7 +18,7 @@ angular.module('sourceOfTruth')
 
 			$scope.LinkToStatement = function()
 			{
-				$location.path('/statements/' + $scope.searchStatement.name.toLowerCase());
+				$location.path('/statements/' + $scope.search.name.toLowerCase());
 			}
 		}
 	]);

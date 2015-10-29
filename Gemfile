@@ -29,6 +29,9 @@ gem 'responders'
 # Use 'angular-rails-templates' for compiling html templates into JS files
 gem 'angular-rails-templates'
 
+# Use 'syntax-highligher-rails' for syntax highlighting in webpages
+gem 'syntax-highlighter-rails'
+
 group :development, :test do
   # Call 'pry-byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug'

@@ -12,7 +12,7 @@ angular.module('sourceOfTruth')
 
 			$scope.LinkToStatement = function()
 			{
-				$location.path('/statements/' + $scope.searchStatement.name.toLowerCase());
+				$location.path('/statements/' + $scope.search.name.toLowerCase());
 			}
 		}
 	]);

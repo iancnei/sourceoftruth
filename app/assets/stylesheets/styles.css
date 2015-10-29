@@ -1,33 +1,31 @@
-.navbar .navbar-nav
-{
+.navbar .navbar-nav {
     display: inline-block;
     float: none;
 }
 
-.navbar .navbar-collapse
-{
+.navbar .navbar-collapse {
     text-align: center;
 }
 
-.example-text
-{
+.example-body {
 	clear: left;
 }
 
-.example-header
-{
+.example-header {
 	display: inline-block;
 	vertical-align: middle;
 	float: none;
 }
 
-body
-{
+td {
+	background-color: white;
+}
+
+body {
 	padding-top: 50px;
 }
 
-img
-{
+img {
 	float: left;
 	margin-right: 15px;
 

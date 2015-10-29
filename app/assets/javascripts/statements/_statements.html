@@ -7,8 +7,13 @@
 			    		<div class="form-group" style="display:inline;">
 			    		  <div class="input-group">
 			    		    <span style="width: 1%;" class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-			    		    <input class="form-control" name="search" ng-model="searchStatement.name" placeholder="Search for a Basic Programming Statement" autocomplete="off" autofocus="autofocus" type="text">
+			    		    <input class="form-control" name="search" ng-model="search.name" placeholder="Search" autofocus type="text" autocomplete="off">
 			    		  </div>
+			    		    <table class="table table-bordered" ng-show="search.name.length">
+			    		      	<tr ng-repeat="statement in allStatements.$$state.value.data | filter:search:strict">
+			    		  			<td ng-click="linkToStatement(statement.name)"><a href="/statements/{{ statement.name }}">{{ statement.name }}</a></td>
+			    		  		</tr>
+			    			</table>
 			    		</div>
 			    	</form>
 			    </div>
@@ -30,10 +35,14 @@
 				<h3>{{ language.name }}</h3>
 				<h4><a ng-href='{{ language.convention_link }}'>{{ language.name }} Coding Conventions</a></h4>
 			</div>
-			<div class="example-text">
-				<pre>{{ statement.$$state.value.data.example[$index].text }}</pre>
+			<div class="example-body">
+				<pre class="brush: {{ language.name.toLowerCase() }}">{{ statement.$$state.value.data.example[$index].text }}</pre>
 			</div>
 			<br>
 		</li>
 	</ul>
 </div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all()
+</script>
