@@ -18,7 +18,9 @@ end
 
 # create all the languages
 allLanguages = []
-allLanguages.push({name: "Javascript", convention_link: "https://github.com/airbnb/javascript"}, {name: "Ruby", convention_link: "https://github.com/styleguide/ruby"})
+allLanguages.push(
+	{name: "Javascript", color: "#F0DB4F", convention_link: "https://github.com/airbnb/javascript"},
+	{name: "Ruby", color: "#D34621", convention_link: "https://github.com/styleguide/ruby"})
 
 Language.destroy_all
 

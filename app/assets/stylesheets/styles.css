@@ -9,7 +9,30 @@
     text-align: center;
 }
 
+.example-text
+{
+	clear: left;
+}
+
+.example-header
+{
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
 body
 {
-	padding-top: 70px;
+	padding-top: 50px;
+}
+
+img
+{
+	float: left;
+	margin-right: 15px;
+
+	height: 100%;
+	width: 100%;
+	max-width: 100px;
+	max-height: 100px;
 }

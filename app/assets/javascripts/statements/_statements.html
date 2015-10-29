@@ -17,15 +17,22 @@
 	</ul>
 </div>
 <div class="page-header">
-	<h3>{{ statement.$$state.value.data.statement.name }} Statements</h3>
-	<h4><a ng-href='{{ statement.$$state.value.data.statement.info_link }}'>Wikipedia</a></h4>
+	<h2>{{ statement.$$state.value.data.statement.name }} Statements</h2>
+	<h3><a ng-href='{{ statement.$$state.value.data.statement.info_link }}'>Visit Wikipedia for a quick refresher on how {{ statement.$$state.value.data.statement.name }} statements work.</a></h3>
 </div>
 <div>
 	<ul class="list-unstyled">
 		<li ng-repeat="language in statement.$$state.value.data.language track by $index">
-			<h4>{{ language.name }}</h4>
-			<h5><a ng-href='{{ language.convention_link }}'>Coding Conventions</a></h5>
-			<pre>{{ statement.$$state.value.data.example[$index].text }}</pre>
+			<div>
+				<img class="img-rounded text-left" ng-src="{{ language.name.toLowerCase() }}.png" alt='{{ language.name }} Logo'/>
+			</div>
+			<div class="example-header">
+				<h3>{{ language.name }}</h3>
+				<h4><a ng-href='{{ language.convention_link }}'>{{ language.name }} Coding Conventions</a></h4>
+			</div>
+			<div class="example-text">
+				<pre>{{ statement.$$state.value.data.example[$index].text }}</pre>
+			</div>
 			<br>
 		</li>
 	</ul>
