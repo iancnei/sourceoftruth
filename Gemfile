@@ -35,6 +35,9 @@ gem 'syntax-highlighter-rails'
 # Use 'rails_12factor' for heroku features
 gem 'rails_12factor'
 
+# Use Bootstrap for responsive design
+gem 'bootstrap-sass'
+
 group :development, :test do
   # Call 'pry-byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug'
