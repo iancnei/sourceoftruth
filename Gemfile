@@ -32,6 +32,9 @@ gem 'angular-rails-templates'
 # Use 'syntax-highligher-rails' for syntax highlighting in webpages
 gem 'syntax-highlighter-rails'
 
+# Use 'rails_12factor' for heroku features
+gem 'rails_12factor'
+
 group :development, :test do
   # Call 'pry-byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug'
