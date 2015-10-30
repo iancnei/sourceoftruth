@@ -28,15 +28,15 @@ Source of Truth (working title) will be made with Ruby on Rails and AngularJS. I
 **Goals that have been strikethroughed mean that goal has been reached.**
 * ~~Basic formatting of code when displayed on the webpage~~
 * ~~Data is stored in a database~~
-* ~~Search bar to search through all available statements~~
+* ~~Search bar can search through all available statements~~
 * ~~Links to more information about statements and coding conventions for languages~~
 * ~~Single page app~~
 * Code has syntax highlighting when displayed on the webpage
 * Search bar has autocomplete
+* Examples can be filtered
 * Users can sign up and submit additional examples
 * Admin can approve user submitted examples
-* Examples can be filtered
-
+* User submitted examples can be compiled and run before submission to check if they are valid or not
 
 ## How to set up the website?
 
