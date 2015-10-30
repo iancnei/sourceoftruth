@@ -84,4 +84,4 @@ https://sourceoftruth.herokuapp.com/
 
 ### User Stories
 
-https://trello.com/b/ddBCrGYt/source-of-truth
+A [Trello board](https://trello.com/b/ddBCrGYt) is being used to track user stories and the current progress on each one.
